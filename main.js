@@ -1,12 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll(".social-links a");
-  const frame = document.getElementById("frame");
-
-  links.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const url = link.getAttribute("data-link");
-      frame.src = url;
-    });
-  });
+var typed = new Typed(".text", {
+    strings: ["Computer Science Student", "Frontend Developer", "Web Developer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
 });
